@@ -1,0 +1,132 @@
+.feed-container {
+  margin: 10px;
+  height: 300px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 718px) {
+  .ribbon {
+    width: 34%;
+    height: 5.5px;
+    margin-top: 10px;
+  }
+
+  .author {
+    margin-top: 20px;
+    display: block;
+  }
+
+  [class^="feed-section"] {
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #f4f2f2;
+    padding: 14px;
+    height: 120px;
+    overflow: hidden;
+    border-bottom: 2.9px solid #d0cece;
+  }
+
+  [class^="feed-section"] span {
+    padding: 1px;
+    height: 120px;
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .ribbon {
+    width: 24%;
+    background-color: red;
+    height: 5.5px;
+    margin-top: 10px;
+  }
+
+  .author {
+    margin-top: 0px;
+    display: block;
+    font-size: 16px;
+  }
+
+  [class^="feed-section"] span {
+    padding: 1px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+  }
+
+  .feed-container {
+    margin-top: 70px;
+  }
+
+  [class^="feed-section"] {
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #f4f2f2;
+    padding: 7px;
+    height: 120px;
+    overflow: hidden;
+    border-bottom: 2.9px solid #d0cece;
+    border-right: 1px solid rgb(206, 196, 195);
+  }
+  [class^="feed-section"]:hover{
+    background-color: #e3e3e3;
+    cursor: pointer;
+  }
+
+  .feed-item {
+    display: grid;
+    grid-template-columns: repeat("auto-fit", minmax(25vw, 4fr));
+    grid-template-rows: 100px 100px;
+    row-gap: 20px;
+  }
+
+  .feed-section-1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .feed-section-2 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .feed-section-3 {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .feed-section-4 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .feed-section-5 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .feed-section-6 {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 1030px) and (min-width: 725px) {
+  .feed-item {
+    display: grid;
+    grid-template-columns: repeat("auto-fit", minmax(20vw, 4fr));
+    row-gap: 30px;
+  }
+  [class^="feed-section"] span {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+}

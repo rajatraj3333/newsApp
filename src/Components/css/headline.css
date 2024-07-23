@@ -1,0 +1,251 @@
+.g3-item3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: -0px 10px;
+  background-color: white;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.g3-item3:hover{
+  background-color:#fcfcfc;
+  cursor: pointer;
+}
+.item1 p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: -0px 0px;
+  margin-top: 0px;
+}
+
+.item1 p:hover{
+  background-color: #d4d4d4;
+  text-decoration: underline;
+  cursor: pointer;
+  text-shadow: 1px 1px #bbb,
+  -1px -1px #999;
+  background: linear-gradient(to right, yellow,white,green);
+}
+
+@media screen and (max-width: 719px) {
+  .headline-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .headline-container .grid-item1 {
+    height: 200px;
+    width: 100%;
+  }
+  .grid-item1 > img {
+    height: 200px;
+
+    width: 100%;
+    }
+
+  .item1 span {
+    padding: -0px 0px;
+    display: block;
+    line-height: 1.5rem;
+  }
+
+  .item1 > img {
+    height: 50%;
+    width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+  }
+
+  .content-item {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .grid-item2 .content-item > .item1 {
+    margin: 5px 10px;
+    height: 240px;
+    min-width: 80%;
+  }
+
+  .headline-container .grid-item2 {
+    margin: 10px 0px;
+    height: 250px;
+    background-color: rgb(247, 246, 246);
+  }
+
+  .headline-container .grid-item3 {
+    height: 380px;
+    background-color: rgb(251, 251, 251);
+  }
+
+  .g3-item3 {
+    height: 90px;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: hidden;
+  }
+
+  .news-category {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  .g3-item3 span:not(.news-category) {
+    font-size: 14px;
+  }
+
+  .g3-text {
+    display: block;
+  }
+
+  .g3-author {
+    display: block;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .headline-container {
+    /* margin-top: 60PX; */
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 60vw 30vw;
+    gap: 10px;
+    grid-template-rows: 500px 320px;
+  }
+  .headline-container .grid-item1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+
+    overflow: hidden;
+  }
+  .grid-item1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-item .item1 img {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+
+  .headline-container .grid-item2 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    border: 1px solid #d4d4d4;
+  }
+  .grid-item2 .content-item {
+    overflow-y: scroll;
+  }
+
+  .grid-item2 .content-item .item1 {
+    margin: 10px 10px;
+    height: 260px;
+    background-color: #fcfcfc;
+    overflow: hidden;
+  }
+
+  .headline-container .grid-item3 {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 160px;
+    overflow-y: scroll;
+  }
+
+  .g3-item3 {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    margin: 1px;
+    /* overflow: hidden; */
+  }
+
+  .grid-item1 > img {
+    width: "900px";
+    height: "500px";
+  }
+
+  .news-category {
+    background-color: #df9b9b;
+    padding: 6px;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 7px;
+  }
+
+  .g3-text {
+    display: block;
+    padding-top: 6px;
+    }
+
+  .g3-author {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 722px) and (max-width: 1450px) {
+  .headline-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 64vw 30vw;
+    gap: 10px;
+    column-gap: 10px;
+    grid-template-rows: 50vh 30vh;
+  }
+  .headline-container .grid-item3 {
+    display: grid;
+    grid-column: 1;
+
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 35vw 35vw;
+    overflow: scroll;
+  }
+
+  .grid-item2 .item1 p {
+    font-size: 13px;
+  }
+
+  .grid-item2 .item1 span {
+    margin-top: -10px;
+  }
+
+  .g3-item3 {
+    height: 140px;
+  }
+  .g3-item3 span {
+    font-size: 16px;
+  }
+
+  .g3-item3 .g3-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .g3-item3 .g3-author {
+    font-size: 12px;
+  }
+
+  .content-item .item1 img {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+}

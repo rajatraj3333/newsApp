@@ -1,0 +1,39 @@
+.wraper {
+  width: 100%;
+
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 719px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+
+  [class^="section-item"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 400px 500px 400px;
+    gap: 10px;
+    margin: -35px 60px;
+    background-color: black;
+
+    color: aliceblue;
+  }
+
+  [class^="section-item"] > p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
